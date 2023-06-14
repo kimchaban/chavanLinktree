@@ -47,6 +47,10 @@ textarea {
 	text-decoration: none;
 }
 
+.btn:hover {
+	background-color: #fbf97b;
+}
+
 a:hover,
 button:hover {
 	cursor: pointer;
