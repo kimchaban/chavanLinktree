@@ -17,6 +17,8 @@
 
 body {
 	background-color: #fffce0;
+	max-width: 400px;
+	margin: 0 auto;
 }
 
 main {
@@ -28,15 +30,26 @@ textarea {
 }
 
 .wrap {
-	padding: 121px 20px 20vh;
+	padding: 70px 20px 20vh;
 }
 
-button {
+.btn {
 	width: 100%;
+	height: 46px;
 	border: 0;
 	border-radius: 25px;
 	background-color: #c8ff82;
 	color: #747474;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+a:hover,
+button:hover {
+	cursor: pointer;
 }
 
 .profile {
@@ -60,13 +73,12 @@ button {
 	display: flex;
 	flex-direction: column;
 }
-.btn-group button {
-	width: 272px;
-	height: 46px;
+.btn-group .btn {
 	margin-bottom: 16px;
+	width: 272px;
 }
 
-.btn-group button:nth-child(even) {
+.btn-group .btn:nth-child(even) {
 	align-self: flex-end;
 }
 
@@ -191,9 +203,11 @@ input[type='checkbox'] {
 	width: 100%;
 	position: fixed;
 	bottom: 0;
-	left: 0;
+	left: 50%;
+	transform: translateX(-50%);
 	padding: 10px 20px 30px;
 	background-color: #fffce0;
+	max-width: 400px;
 }
 
 .letter-wrap footer button {
