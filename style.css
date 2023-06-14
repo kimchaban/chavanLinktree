@@ -170,6 +170,7 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
+	color: #000;
 	border: 2px solid #b2e7a1;
 }
 
