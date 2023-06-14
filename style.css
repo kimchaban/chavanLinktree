@@ -162,6 +162,7 @@ button:hover {
 input,
 textarea,
 select {
+	color: #000;
 	font-size: 16px;
 	padding: 0 20px;
 	outline: none;
