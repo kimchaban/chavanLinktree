@@ -217,5 +217,7 @@ input[type='checkbox'] {
 }
 
 .warn {
-	color: red;
+	color: #a1a087;
+	font-size: 13px;
+	margin-top: 10px;
 }

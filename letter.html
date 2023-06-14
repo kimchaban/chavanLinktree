@@ -17,9 +17,7 @@
 			<main>
 				<div>
 					<p class="warn">
-						!경고! 현재 창에서 작성하는 메시지는 차반에게 가지 않습니다.
-						보여주고 싶은 메시지가 있다면 캡쳐해서 직접 보여주시기 바랍니다.
-						감사합니다.
+						'보내기' 버튼을 누른 후 완료 메시지가 나올 때까지 잠시 기다려주세요!
 					</p>
 				</div>
 				<form
@@ -42,7 +40,7 @@
 						<label class="label">보내는 사람 성별</label>
 						<div class="row-group radio">
 							<label for="female">
-								<input type="radio" id="female" name="성별" value="여성 " />
+								<input type="radio" id="female" name="성별" value="여성" />
 								<span>여성</span>
 							</label>
 							<label for="xy">
@@ -132,13 +130,36 @@
 							</div>
 						</div>
 					</div>
+
+					<!-- s 제출 완료 후 화면 -->
+					<div
+						style="
+							display: none;
+							margin-top: 30px;
+							background: #ffea00;
+							border-radius: 20px;
+							padding: 10px;
+						"
+						class="thankyou_message"
+					>
+						<!-- You can customize the thankyou message by editing the code below -->
+						<h2><em>고마워요!</em> 전송이 완료되었어요 :)</h2>
+					</div>
+					<!-- e 제출 완료 후 화면 -->
 				</form>
 			</main>
+
 			<footer>
-				<button class="btn" type="submit" form="gform-letter-content">
-					보내기
-				</button>
+				<button class="btn" form="gform-letter-content">보내기</button>
 			</footer>
 		</div>
+
+		<!-- s 제출 완료 후 화면 커스텀 script -->
+		<script
+			data-cfasync="false"
+			type="text/javascript"
+			src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+		></script>
+		<!-- e 제출 완료 후 화면 커스텀 script -->
 	</body>
 </html>
